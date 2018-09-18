@@ -1,0 +1,7 @@
+dokuwikildap:
+  build: ./web
+  volumes:
+    - /opt/dokuwiki/source/www:/var/www
+    - /opt/dokuwiki/source/dokuwiki-storage:/var/dokuwiki-storage
+  ports:
+    - "8082:80"
