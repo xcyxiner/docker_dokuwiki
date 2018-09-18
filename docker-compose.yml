@@ -1,7 +1,7 @@
 dokuwikildap:
-  build: ./web
+  image: xcyxiner/symfony
+  container_name: "dokuwikildap"
   volumes:
-    - /opt/dokuwiki/source/www:/var/www
-    - /opt/dokuwiki/source/dokuwiki-storage:/var/dokuwiki-storage
+    - /opt/docker_dokuwiki/dokuwiki:/var/www/html
   ports:
-    - "8082:80"
+    - "8080:80"
